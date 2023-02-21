@@ -6,11 +6,11 @@ bool pred(char c) {
     return c == 'd';
 }
 
-char* find_if(string s, bool (*func)(char c)) {
-    int n = s.length();
-    for (int i = 0; i < n; i++) {
-        if (func(s[i])) {
-            return &s[i];
+char* find_if(char s[], bool (*func)(char c)) {
+    int len = sizeof(s) / sizeof(char);
+    for (int i = 0; i < len; i++) {
+        if (func(*(s + i))) {
+            return s + i;
         }
     }
     return nullptr;
