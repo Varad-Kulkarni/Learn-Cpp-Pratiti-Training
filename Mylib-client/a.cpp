@@ -1,5 +1,6 @@
 #include<cstdio>
 #include "b.h"
+#include "Circle.h";
 int Add(int a, int b);
 
 int main() {
@@ -8,6 +9,9 @@ int main() {
 	//c += PI;
 	printf("Addition is %d\n", c);
 	printf("PI value is %lf", PI);
+
+	Circle circle(3);
+	circle.GetRadius();
 }
 
 

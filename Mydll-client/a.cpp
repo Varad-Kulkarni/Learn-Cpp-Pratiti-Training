@@ -1,5 +1,6 @@
 #include<cstdio>
 #include"b.h"
+#include "Circle.h";
 
 //int _declspec(dllimport) Add(int a, int b);
 
@@ -7,6 +8,8 @@ int main() {
 	int a = 10, b = 11;
 	int c = Add(a, b);
 	printf("Addition is %d\n", c);
+	Circle circle(10);
+	circle.Print();
 	//printf("PI is %lf", PI);
 }
 
